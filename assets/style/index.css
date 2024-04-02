@@ -114,6 +114,9 @@ nav ul li a:hover {
   position: relative;
 }
 
+.hole {
+  background-color: #000000;
+}
 
 /* doors */
 .door {
