@@ -5,13 +5,13 @@ const door = document.querySelectorAll('.door');
 const hole = document.querySelectorAll('.hole');
 const block = document.querySelectorAll('.block');
 
-var posX = 0;
-var posY = 0;
+let posX = 0;
+let posY = 0;
 
 function moveBox(direction) {
-  var rect = player.getBoundingClientRect();
-  var maxX = window.innerWidth - rect.width;
-  var maxY = window.innerHeight - rect.height;
+  let rect = player.getBoundingClientRect();
+  let maxX = window.innerWidth - rect.width;
+  let maxY = window.innerHeight - rect.height;
   
   switch(direction) {
     case 'ArrowLeft':
