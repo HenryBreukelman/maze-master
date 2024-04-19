@@ -63,8 +63,8 @@ nav ul li a:hover {
 
 .player {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 3svh;
+  height: 3svh;
   background-color: red;
   z-index: 9;
 }
