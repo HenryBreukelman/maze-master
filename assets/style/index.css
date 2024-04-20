@@ -76,11 +76,11 @@ nav ul li a:hover {
 
 .player-two {
   top: 50%;
-  right: 0;
+  left: 97%;
 }
 
 .player-three {
-  bottom: 0;
+  top: 97%;
   left: 50%;
 }
 
