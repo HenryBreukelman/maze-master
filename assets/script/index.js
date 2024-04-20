@@ -9,10 +9,7 @@ let posX = 0;
 let posY = 0;
 
 function moveBox(direction) {
-  let rect = player.getBoundingClientRect();
-  let maxX = window.innerWidth - rect.width;
-  let maxY = window.innerHeight - rect.height;
-  
+
   switch(direction) {
     case 'ArrowLeft':
       posX = Math.max(0, posX - 10);
