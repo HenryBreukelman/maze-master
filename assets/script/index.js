@@ -9,20 +9,26 @@ let posX = 0;
 let posY = 0;
 
 function moveBox(direction) {
-
-
   switch(direction) {
     case 'ArrowLeft':
-      posX = posX - 1
+      if (posX > 0) {
+        posX = posX - 1;
+      }
       break;
     case 'ArrowUp':
-      posY = posY - 1
+      if (posY > 0) {
+        posY = posY - 1;
+      }
       break;
     case 'ArrowRight':
-      posX = posX + 1
+      if (posX < 97) {
+        posX = posX + 1;
+      }
       break;
     case 'ArrowDown':
-      posY = posY + 1
+      if (posY < 97) {
+        posY = posY + 1;
+      }
       break;
   }
   
