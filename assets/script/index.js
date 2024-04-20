@@ -10,23 +10,24 @@ let posY = 0;
 
 function moveBox(direction) {
 
+
   switch(direction) {
     case 'ArrowLeft':
-      posX = Math.max(0, posX - 10);
+      posX = posX - 1
       break;
     case 'ArrowUp':
-      posY = Math.max(0, posY - 10);
+      posY = posY - 1
       break;
     case 'ArrowRight':
-      posX = Math.min(maxX, posX + 10);
+      posX = posX + 1
       break;
     case 'ArrowDown':
-      posY = Math.min(maxY, posY + 10);
+      posY = posY + 1
       break;
   }
   
-  player.style.left = posX + 'px';
-  player.style.top = posY + 'px';
+  player.style.left = posX + '%';
+  player.style.top = posY + '%';
 }
 
 
