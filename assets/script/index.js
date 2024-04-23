@@ -9,8 +9,7 @@ let posX = 0;
 let posY = 0;
 
 function getcords() {
-  let posX = 0;
-  let posY = 0;
+
 }
 
 function moveBox(direction) {
