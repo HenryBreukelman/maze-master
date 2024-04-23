@@ -8,6 +8,11 @@ const block = document.querySelectorAll('.block');
 let posX = 0;
 let posY = 0;
 
+function getcords() {
+  let posX = 0;
+  let posY = 0;
+}
+
 function moveBox(direction) {
   switch(direction) {
     case 'ArrowLeft':
@@ -43,3 +48,5 @@ document.addEventListener('keydown', function(event) {
       moveBox(event.key);
   }
 });
+
+document.addEventListener('load', getcords)
