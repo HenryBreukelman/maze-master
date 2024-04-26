@@ -30,13 +30,8 @@ function getcords() {
     posX = 0;
     posY = 49;
   }
-  print()
 }
 
-function print () {
-  console.log(posY)
-  console.log(posX)
-}
 
 function moveBox(direction) {
   switch(direction) {
