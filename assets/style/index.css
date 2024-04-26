@@ -71,21 +71,21 @@ nav ul li a:hover {
 
 .player-one {
   top: 0;
-  left: 50%;
+  left: 49%;
 }
 
 .player-two {
-  top: 50%;
-  left: 96.9%;
+  top: 49%;
+  left: 97%;
 }
 
 .player-three {
   top: 97%;
-  left: 50%;
+  left: 49%;
 }
 
 .player-four {
-  top: 50%;
+  top: 49%;
   left: 0;
 }
 
