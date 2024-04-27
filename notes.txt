@@ -1,0 +1,4 @@
+add way to change player
+add moving obsticals
+death screen
+local storage
