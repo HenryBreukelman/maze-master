@@ -64,6 +64,13 @@ function moveBox(direction) {
   }
 }
 
+function checkDeath() {
+
+}
+
+function died() {
+
+}
 
 document.addEventListener('keydown', function(event) {
   if (['ArrowLeft', 'ArrowUp', 'ArrowRight', 'ArrowDown'].includes(event.key)) {

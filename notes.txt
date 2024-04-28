@@ -1,5 +1,5 @@
 add way to change player
-add moving obsticals
+add moving obsticals ('block')
 death screen
 local storage
 unlock next level
