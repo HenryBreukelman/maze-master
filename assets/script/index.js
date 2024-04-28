@@ -9,7 +9,7 @@ const playerTwo = document.querySelector('.player-two');
 const playerThree = document.querySelector('.player-three');
 const playerFour = document.querySelector('.player-four');
 
-
+let alive = true
 let posX = 0;
 let posY = 0;
 
@@ -34,31 +34,34 @@ function getcords() {
 
 
 function moveBox(direction) {
-  switch(direction) {
-    case 'ArrowLeft':
-      if (posX > 0) {
-        posX = posX - 1;
-      }
-      break;
-    case 'ArrowUp':
-      if (posY > 0) {
-        posY = posY - 1;
-      }
-      break;
-    case 'ArrowRight':
-      if (posX < 97) {
-        posX = posX + 1;
-      }
-      break;
-    case 'ArrowDown':
-      if (posY < 97) {
-        posY = posY + 1;
-      }
-      break;
+  if (alive === true) {
+    
+    switch(direction) {
+      case 'ArrowLeft':
+        if (posX > 0) {
+          posX = posX - 1;
+        }
+        break;
+      case 'ArrowUp':
+        if (posY > 0) {
+          posY = posY - 1;
+        }
+        break;
+      case 'ArrowRight':
+        if (posX < 97) {
+          posX = posX + 1;
+        }
+        break;
+      case 'ArrowDown':
+        if (posY < 97) {
+          posY = posY + 1;
+        }
+        break;
+    }
+    
+    player.style.left = posX + '%';
+    player.style.top = posY + '%';
   }
-  
-  player.style.left = posX + '%';
-  player.style.top = posY + '%';
 }
 
 
